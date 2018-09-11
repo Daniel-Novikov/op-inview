@@ -1,0 +1,22 @@
+{
+  "name": "op-inview",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Daniel-Novikov/op-inview.git"
+  },
+  "author": "Daniel Novikov <daniel.d.novikov@gmail.com> (http://danielnovikov.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Daniel-Novikov/op-inview/issues"
+  },
+  "homepage": "https://github.com/Daniel-Novikov/op-inview#readme"
+}
