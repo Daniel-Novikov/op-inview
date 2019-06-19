@@ -1,14 +1,19 @@
 {
   "name": "op-inview",
-  "version": "1.0.0",
-  "description": "",
-  "main": "src/index.js",
+  "version": "0.0.1",
+  "description": "Trigger function / add class when element is in the viewport",
+  "main": "dist/op-inview.cjs.js",
+  "module": "dist/op-inview.esm.js",
+  "browser": "dist/op-inview.umd.js",
   "scripts": {
-    "test": "mocha --reporter spec"
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "test": "node test/test.js",
+    "pretest": "npm run build"
   },
-  "engines": {
-    "node": ">=8"
-  },
+  "files": [
+    "dist"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Daniel-Novikov/op-inview.git"
@@ -18,5 +23,17 @@
   "bugs": {
     "url": "https://github.com/Daniel-Novikov/op-inview/issues"
   },
-  "homepage": "https://github.com/Daniel-Novikov/op-inview#readme"
+  "homepage": "https://github.com/Daniel-Novikov/op-inview#readme",
+  "devDependencies": {
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.6.0",
+    "rollup": "^0.65.0",
+    "rollup-plugin-babel": "^2.7.1",
+    "rollup-plugin-commonjs": "^9.1.0",
+    "rollup-plugin-node-resolve": "^3.0.0"
+  },
+  "dependencies": {
+    "@gladeye/af": "^1.0.4",
+    "op-view-progress": "0.0.2"
+  }
 }
