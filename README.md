@@ -30,7 +30,7 @@ const inview = OpInview.create(config);
 It accepts a config object. 
 
 | Type    | Name            | Default Value   | Description                                                                                                                                                                         |
-|-------- |---------------- |---------------- |----------------------------------------------------------------------------------------------------------- |
+|-------- |---------------------- |------------------------------- |----------------------------------------------------------------------------------------------------------- |
 | Dom node  | `el` | `undefined` (required)             | Dom element to track |
 | Float  | `start`     | `0.2`             | Start position of inview trigger range, when scrolling the page down. Using [opViewProgress](https://www.npmjs.com/package/op-view-progress) to track elements progress in the viewport |
 | Float  | `end`        | `0.8`             | End position of inview trigger range, when scrolling the page down. |
