@@ -1,6 +1,6 @@
 {
   "name": "op-inview",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Trigger function / add class when element is in the viewport",
   "main": "dist/index.js",
   "scripts": {
