@@ -2,14 +2,11 @@
   "name": "op-inview",
   "version": "0.0.1",
   "description": "Trigger function / add class when element is in the viewport",
-  "main": "dist/op-inview.cjs.js",
-  "module": "dist/op-inview.esm.js",
-  "browser": "dist/op-inview.umd.js",
+  "main": "dist/index.js",
   "scripts": {
-    "build": "rollup -c",
-    "dev": "rollup -c -w",
-    "test": "node test/test.js",
-    "pretest": "npm run build"
+    "build": "npm run lint && babel ./src -d ./dist",
+    "lint": "eslint ./src",
+    "test": "mocha --require @babel/register"
   },
   "files": [
     "dist"
@@ -25,16 +22,22 @@
   },
   "homepage": "https://github.com/Daniel-Novikov/op-inview#readme",
   "devDependencies": {
-    "babel-plugin-transform-class-properties": "^6.24.1",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-preset-env": "^1.6.0",
-    "rollup": "^0.65.0",
-    "rollup-plugin-babel": "^2.7.1",
-    "rollup-plugin-commonjs": "^9.1.0",
-    "rollup-plugin-node-resolve": "^3.0.0"
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/register": "^7.4.4",
+    "assert": "^2.0.0",
+    "babel-eslint": "^10.0.2",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.3",
+    "jsdom": "15.1.1",
+    "jsdom-global": "3.0.2",
+    "mocha": "^6.1.4"
   },
   "dependencies": {
     "@gladeye/af": "^1.0.4",
-    "op-view-progress": "0.0.2"
+    "op-view-progress": "0.0.5"
   }
 }

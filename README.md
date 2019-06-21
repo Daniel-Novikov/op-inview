@@ -37,7 +37,7 @@ It accepts a config object.
 | String  | `classEnter`    | `is-inview-enter`            | Class to apply when inview node entered the `trigger range`. If set to `null`, class wont be triggered. Has a dublicate class applied with `-top` or `-bottom` modifier, depending on element appearance position. |
 | String | `classExit`    | `is-inview-exit`            | Same as above, but triggered on exit of range. |
 | Boolean | `deactivate`    | `false`            | If set to `true` will deactivate inview, when exited, thus allowing reenter. If set to `false`, will enter once, and remove itself |
-| Function | `onEnterCallback`    | `undefined`            | Function to be called on enter. Receives an object { value, direction }, where `value` is `progress.value` when function is called and `direction` = `top` or `bottom`, depending on element appearance position.  |
+| Function | `onEnterCallback`    | `undefined`            | Function to be called on enter. Receives an object `{ value, direction }`, where `value` is `progress.value` when function is called and `direction` = `top` or `bottom`, depending on element appearance position.  |
 | Function | `onExitCallback`    | `undefined`            | Same as above, but called on exit |
 
 ### Enable inline
